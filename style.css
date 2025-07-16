@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+     "wdth" 100;
+}
+/* common-style */
+main {
+    max-width: 1441px;
+     margin: 0 auto;  
+}
+header{
+    max-width: 1441px;
+    margin: 0 auto;
+}
+.display-flex {
+    display: flex;
+}
+.text-gray{
+    color: rgb(19, 19, 19);
+}
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+/* nav-bar-style */
+.navbar{
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1441px;
+}
+
+.brand{
+    font-size: 45px;
+font-weight: 700;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+   margin: 30px;
+   font-weight: 400;
+   color: rgb(19, 19, 19);
+   align-items: center;
+   display: flex;
+    
+   
+}
+.nav-links li{
+    list-style: none;
+}
+.brand-container{
+    text-align: center;
+    
+}
+.brand-title{
+    font-size: 64px;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+}
+.brand-subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+}
+.explore-button{
+    font-weight:180px ;
+    font-size:16 ;
+    background-color:rgb(255, 144, 14) ;
+    color: white;
+    padding:  20px 25px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 30px;
+}
+.banner-image{
+    width: 100%;
+    margin:0 auto;
+}
+
+    
+    
+
+.times-image{
+    margin-top:85px ;
+}
+
+.image-container{
+   display: flex;
+   gap: 76px;
+   align-items: center;
+}
+.times-image{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 34px;
+}
+.text-title{
+    font-size:45px ;
+    font-weight:700px; 
+
+}
+#quick-list{
+    color: rgb(114, 114, 114);
+}
+#of-our{
+    color: rgb(19, 19, 19);
+}
+.features{
+    color: rgb(255, 144, 14);
+}
+.text-description{
+    font-weight: 400px;
+    font-size: 16px;
+    color: rgb(114, 114, 114);
+}
+/* fact-icon-style */
+.fact{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+padding: 20px; 
+margin-top: 50px;
+margin-bottom: 180px;   
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 124px;
+    text-align: center;
+    
+}
+.fact-number{
+font-size: 45px;
+font-weight: 600;
+color: rgb(66, 66, 66);
+}
+.fact-name{
+    font-weight: 600px;
+    font-size: 16px;
+    color: rgb(114, 114, 114);
+}
+/* responsive media query */
+@media screen and (max-width: 578px) {
+    .navbar ,.nave-links,.image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .times-image{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
